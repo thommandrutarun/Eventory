@@ -1,0 +1,79 @@
+.badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-sans);
+  font-weight: var(--font-weight-medium);
+  line-height: 1;
+  white-space: nowrap;
+  border-radius: var(--radius-full);
+  border: 1px solid transparent;
+  gap: var(--space-1-5);
+}
+
+/* --- Sizes --- */
+.size-sm {
+  font-size: var(--font-size-xs);
+  padding: 0.15rem 0.5rem;
+  height: 22px;
+}
+
+.size-md {
+  font-size: var(--font-size-xs);
+  padding: 0.25rem 0.65rem;
+  height: 26px;
+}
+
+/* --- Variants --- */
+.variant-default,
+.variant-indigo {
+  background-color: var(--surface-accent-subtle);
+  color: var(--text-accent);
+  border-color: rgba(99, 102, 241, 0.2);
+}
+
+.variant-pink {
+  background-color: var(--surface-accent-secondary-subtle);
+  color: var(--text-accent-secondary);
+  border-color: rgba(236, 72, 153, 0.2);
+}
+
+.variant-amber {
+  background-color: var(--surface-accent-warning-subtle);
+  color: var(--text-accent-warning);
+  border-color: rgba(245, 158, 11, 0.25);
+}
+
+.variant-neutral {
+  background-color: var(--surface-muted);
+  color: var(--text-secondary);
+  border-color: var(--border-subtle);
+}
+
+.variant-success {
+  background-color: var(--color-success-bg);
+  color: var(--color-success-text);
+  border-color: var(--color-success-border);
+}
+
+.variant-danger {
+  background-color: var(--color-danger-bg);
+  color: var(--color-danger-text);
+  border-color: var(--color-danger-border);
+}
+
+/* --- Dot Indicator --- */
+.dot {
+  width: 6px;
+  height: 6px;
+  border-radius: var(--radius-full);
+  background-color: currentColor;
+  flex-shrink: 0;
+}
+
+.icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}

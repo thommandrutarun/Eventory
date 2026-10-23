@@ -1,0 +1,136 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1-5);
+  font-family: var(--font-sans);
+  width: 100%;
+}
+
+.full-width {
+  width: 100%;
+}
+
+/* --- Label --- */
+.label {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-1);
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-medium);
+  color: var(--text-primary);
+  user-select: none;
+}
+
+.required-indicator {
+  color: var(--color-danger-text);
+  font-weight: var(--font-weight-bold);
+}
+
+/* --- Input Control Container --- */
+.control-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.input {
+  width: 100%;
+  font-family: var(--font-sans);
+  font-size: var(--font-size-sm);
+  line-height: var(--line-height-sm);
+  color: var(--input-fg);
+  background-color: var(--input-bg);
+  border: 1px solid var(--input-border);
+  border-radius: var(--radius-md);
+  padding: 0.55rem 0.875rem;
+  height: 40px;
+  outline: none;
+  transition:
+    border-color var(--transition-fast),
+    box-shadow var(--transition-fast),
+    background-color var(--transition-fast);
+}
+
+.input::placeholder {
+  color: var(--input-placeholder);
+  opacity: 1;
+}
+
+.input:hover:not(:disabled) {
+  border-color: var(--input-border-hover);
+}
+
+.input:focus-visible {
+  border-color: var(--border-focus);
+  box-shadow: var(--focus-ring);
+}
+
+.input:disabled {
+  background-color: var(--input-disabled-bg);
+  color: var(--input-disabled-fg);
+  cursor: not-allowed;
+  opacity: 0.7;
+}
+
+/* Left & Right Affixes */
+.has-left-element {
+  padding-left: 2.5rem;
+}
+
+.has-right-element {
+  padding-right: 2.5rem;
+}
+
+.element-left,
+.element-right {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.5rem;
+  color: var(--text-tertiary);
+  pointer-events: none;
+}
+
+.element-left {
+  left: 0;
+}
+
+.element-right {
+  right: 0;
+}
+
+/* Allow interactive elements in rightElement (like action buttons) */
+.element-right > * {
+  pointer-events: auto;
+}
+
+/* --- Error State --- */
+.has-error .input {
+  border-color: var(--color-danger-text);
+  color: var(--text-primary);
+}
+
+.has-error .input:focus-visible {
+  border-color: var(--color-danger-text);
+  box-shadow: 0 0 0 3px rgba(220, 38, 38, 0.25);
+}
+
+.error-message {
+  display: flex;
+  align-items: center;
+  gap: var(--space-1);
+  font-size: var(--font-size-xs);
+  color: var(--color-danger-text);
+  line-height: var(--line-height-xs);
+}
+
+/* --- Hint Text --- */
+.hint-message {
+  font-size: var(--font-size-xs);
+  color: var(--text-tertiary);
+  line-height: var(--line-height-xs);
+}
