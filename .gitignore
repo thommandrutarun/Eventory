@@ -54,6 +54,7 @@ lerna-debug.log*
 .turbo
 .eslintcache
 .cache
+*.tsbuildinfo
 .DS_Store
 Thumbs.db
 ehthumbs.db
