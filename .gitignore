@@ -1,0 +1,60 @@
+# Dependencies
+/node_modules
+/.pnp
+.pnp.js
+.yarn/cache
+.yarn/unplugged
+.yarn/build-state.yml
+.yarn/install-state.gz
+.pnp.*
+
+# Testing & Coverage
+/coverage
+*.lcov
+.nyc_output
+
+# Next.js Build Outputs
+/.next/
+/out/
+/build
+/dist
+
+# Vercel
+.vercel
+
+# Debug & Execution Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+*.log
+
+# Environment variables & secrets (Never commit secrets)
+.env
+.env*.local
+.env.development.local
+.env.test.local
+.env.production.local
+!.env.example
+
+# IDE & Editor configs (containing local credentials & MCP secrets)
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Local Agent & MCP configurations (containing private tokens)
+.agents/
+
+# Caches & System Files
+.turbo
+.eslintcache
+.cache
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini
